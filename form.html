@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="assets/css/app.css">
 
 </head>
-<body class="d1">
+<body class="d1" data-step="step_1">
 
 
 <div class="hero-1 hero-1--blue">
@@ -20,7 +24,7 @@
         </div>
         <h1 class="hero-1__title">1, 2 or 3 Year Fixed Term Savings Bond Application Form</h1>
         <div class="hero-1__progress-wrap">
-            <p>Step 1 of 8 - Select from our 1, 2 or 3 Year Fixed Term Savings Bonds</p>
+            <p data-title>Step 1 of 8 - Select from our 1, 2 or 3 Year Fixed Term Savings Bonds</p>
             <div class="progress">
                 <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 12%"></div>
             </div>
@@ -28,54 +32,1408 @@
     </div>
 </div>
 
+<form action="https://api.formbucket.com/f/buk_UXMgdHB2Q6260ril7H332B5G" method="post" target="_self">
 
-<div class="gray-header">
-    <div class="container">
-        <p>
-            <span class="icon first icon-orange-arrow"></span>
-            Please choose from our 1, 2 or 3 Year Fixed Terms Savings Bond
-        </p>
+    <div class="hide">
+        <label>Honey pot (Should be empty and hidden)</label>
+        <input type="text" name="somehoneypot"value=""  />
     </div>
+
+<div class="step-wrap">
+    <!--step1-->
+    <div class="step step_1 hi1de">
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    Please choose from our 1, 2 or 3 Year Fixed Terms Savings Bond
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <div class="btn-group big-orange-radio" data-toggle="buttons">
+                    <label class="btn btn-warning btn-30p">
+                        <input name="form_1__fixed_terms_savings" type="radio" value="1%, Gross/AER  1-Year Fixed Bond" autocomplete="off">
+                        <h4>1%</h4>
+                        <p>Gross/AER <br>
+                            1-Year Fixed Bond</p>
+                    </label>
+                    <label class="btn btn-warning btn-30p active">
+                        <input name="form_1__fixed_terms_savings" type="radio" value="1.25%, Gross/AER  2-Year Fixed Bond" autocomplete="off" checked>
+                        <h4>1.25%</h4>
+                        <p>Gross/AER <br>
+                            2-Year Fixed Bond</p>
+                    </label>
+                    <label class="btn btn-warning btn-30p">
+                        <input name="form_1__fixed_terms_savings" type="radio" value="1.5%, Gross/AER  3-Year Fixed Bond" autocomplete="off">
+                        <h4>1.5%</h4>
+                        <p>Gross/AER <br>
+                            3-Year Fixed Bond</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./step1-->
+    <!--step2-->
+    <div class="step step_2 hide">
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    How would you like this account to be set up?
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <div class="btn-group big-orange-radio" data-toggle="buttons">
+                    <label class="btn btn-warning btn-50p short">
+                        <input name="form_2__account_setup_like" type="radio" value="In your name only" autocomplete="off">
+                        <p>In your name only</p>
+                    </label>
+                    <label class="btn btn-warning btn-50p short active">
+                        <input name="form_2__account_setup_like" type="radio" value="In joint names" autocomplete="off" checked>
+                        <p>In joint names</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./step2-->
+    <!--step3-->
+    <div class="step step_3 hide">
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    Before you start, please read (and agree to) our <a href="#">Terms &amp; Conditions</a> and <a href="#">Information
+                    Sheet</a>.
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <dl class="form-area__terms">
+                    <dt><p><strong>Terms &amp; conditions </strong><sup>*</sup></p></dt>
+                    <dd>
+                        <div class="form-group">
+                            <div class="checkbox checkbox-warning">
+                                <input data-rule-required="true" data-msg-required="Please accept terms and conditions" type="checkbox"
+                                       name="form_3__terms_and_conditions" value="" id="form_3__terms_and_conditions">
+                                <label for="form_3__terms_and_conditions">I have read the above terms and conditions and
+                                    the Information Sheet and wish to apply.</label>
+                            </div>
+                        </div>
+                    </dd>
+                    <dt><p><strong>Existing customer</strong></p></dt>
+                    <dd>
+                        <div class="form-group">
+                            <div class="checkbox checkbox-warning">
+                                <input type="checkbox" name="form_3__already_have_account" value="" id="terms_and_conditions_2">
+                                <label for="terms_and_conditions_2">If you already hold an account with The Access
+                                    Bank UL Ltd please tick this box.</label>
+                            </div>
+                        </div>
+                    </dd>
+                    <dt><p><strong>Opt In</strong></p></dt>
+                    <dd>
+                        <div class="form-group">
+                            <div class="checkbox checkbox-warning">
+                                <input  type="checkbox" name="form_3__opt_in" value="" id="terms_and_conditions_3">
+                                <label for="terms_and_conditions_3">We may, from time to time, send you information
+                                    about our products and services which we believe you may be interested in.
+                                    Please tick this box if you wish to receive this information (we will never
+                                    allow third parties to send you marketing information).</label>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!--./step3-->
+    <!--step4-->
+    <div class="step step_4 hide">
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    Applicant 1 - Your Details
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="">
+                                Title
+                                <sup>*</sup></label>
+                            <select name="form_4__title" id="" class="form-control selectpicker">
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for=""> First Name  <sup>*</sup></label>
+                            <input data-rule-required="true" data-msg-required="Please enter your first name"  type="text" name="form_4__first_name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for=""> Middle Name (s)</label>
+                            <input type="text" name="form_4__middle_name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for=""> Surname <sup>*</sup></label>
+                            <input type="text" data-rule-required="true" data-msg-required="Please enter your surname" name="form_4__surname" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row dates-here">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for=""> Date of Birth <sup>*</sup></label>
+                            <div class="select-wrap select-wrap--full">
+                                <div class="select-wrap__item">
+                                    <select name="form_4__date_day" data-rule-required="true" data-msg-required="Please select the day"  id="" class="form-control selectpicker">
+                                        <option value="">Day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap__item">
+                                    <select data-rule-required="true" data-msg-required="Please select the month"  name="form_4__date_month" id="" class="form-control selectpicker">
+                                        <option value="">Month</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap__item">
+                                    <select name="form_4__date_year" data-msg-required="Please select the year" data-rule-required="true"  id="" class="form-control selectpicker">
+                                        <option value="">Year</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1951">1951</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">
+                                Nationality (please state all that apply)
+                                <sup>*</sup></label>
+                            <input data-role="tagsinput" type="text" class="form-control" name="form_4__nationality" data-rule-required="true" data-msg-required="Please put your nationality hear" >
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">
+                                Email Address
+                                <sup>*</sup></label>
+                            <input type="email" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your mail" data-msg-email="Please enter your mail" name="form_4__email" id="form_4__email"  class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">
+                                Confirm Email
+                                <sup>*</sup></label>
+                            <input  data-rule-required="true" data-rule-equalto="#form_4__email" data-msg-required="Please confirm your email" data-msg-equalto="Emails should match" name="form_4__email_confirm"   type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">Home Telephone No.</label>
+                            <input type="text" name="form_4__home_phone" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">Mobile Telephone No.</label>
+                            <input type="text" name="form_4__mobile_phone" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    Applicant 1 - Your current address
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="">Search for an address</label>
+                            <input type="text" name="form_4__search_address" class="form-control" placeholder="Start typing a postcode, street or adress">
+                        </div>
+                    </div>
+                    <label for="" class="error">Please enter your full postcode above and then scroll through the list to select your address.</label>
+                </div>
+                <div class="form-group">
+                    <label for="">Address <sup>*</sup></label>
+                    <textarea name="form_4__existent_address"  data-rule-required="true" data-msg-required="Please enter your address"   id="" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="row dates-here">
+                    <div class="col-sm-6">
+                        <div class="form-group dates">
+                            <label for="">Date moved to address <sup>*</sup></label>
+                            <div class="select-wrap">
+                                <div class="select-wrap__item">
+                                    <select name="form_4__date_moved_day" id="" class="form-control selectpicker"  data-rule-required="true" data-msg-required="Please enter the day"  >
+                                        <option value="">Day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap__item">
+                                    <select name="form_4__date_moved_month" id="" class="form-control selectpicker"  data-rule-required="true" data-msg-required="Please enter the month"  >
+                                        <option value="">Month</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap__item">
+                                    <select name="form_4__date_moved_year" id="" class="form-control selectpicker"  data-rule-required="true" data-msg-required="Please enter the year"  >
+                                        <option value="">Year</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1951">1951</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    Applicant 1 - Tax information
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <div class="form-group">
+                    <label for="">Can you confirm the UK is your only country of residence for tax? <sup>*</sup></label>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="btn-group big-orange-radio" data-toggle="buttons">
+                                <label class="btn btn-warning btn-50p small">
+                                    <input name="form_4__uk_only_tax" value="yes" type="radio" autocomplete="off">
+                                    <p>Yes</p>
+                                </label>
+                                <label class="btn btn-warning btn-50p small active">
+                                    <input name="form_4__uk_only_tax" value="no" type="radio" autocomplete="off" checked>
+                                    <p>No</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Are you a US citizen? <sup>*</sup></label>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="btn-group big-orange-radio" data-toggle="buttons">
+                                <label class="btn btn-warning btn-50p small">
+                                    <input name="form_4__us_citizen" value="yes" type="radio" autocomplete="off">
+                                    <p>Yes</p>
+                                </label>
+                                <label class="btn btn-warning btn-50p small active">
+                                    <input name="form_4__us_citizen" value="no" type="radio" autocomplete="off" checked>
+                                    <p>No</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./step4-->
+    <!--step5-->
+    <div class="step step_5 hide">
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    Applicant 1 - Security questions
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <p class="normal middle"> We will usually only contact you in writing. Howerer, on ocasion, it might be necesarry to contact you by phone or you may want to phone us. So that we are sure we are talking to you, please complete the security questions below. </p>
+                <p class="normal middle"> We will ask you to provide answers to three of your five questions before discussing your account over the telephone.</p>
+                <p class="text-uppercase"><strong>Your memorable details: Applicant 1</strong> </p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">Mother's maiden name <sup>*</sup></label>
+                            <input type="text" class="form-control" name="form_5__memorable_mothers_maiden_name"  data-rule-required="true" data-msg-required="Please enter your mothers maiden name"   placeholder="" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Place of birth * <sup>*</sup></label>
+                            <input type="text" name="form_5__memorable_place_of_birth"  data-rule-required="true" data-msg-required="Please enter your place of birth"  class="form-control" placeholder="" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">First school <sup>*</sup></label>
+                            <input type="text"  data-rule-required="true" data-msg-required="Please enter a first school" name="form_5__memorable_first_school"   class="form-control" placeholder="" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Memorable place  <sup>*</sup></label>
+                            <input type="text" name="form_5__memorable_place"  data-rule-required="true" data-msg-required="Please enter a memorable place"   class="form-control" placeholder="" >
+                        </div>
+                        <div class="dates-here">
+                            <div class="form-group">
+                                <label for="">Memorable date *<sup>*</sup></label>
+                                <div class="select-wrap">
+                                    <div class="select-wrap__item">
+                                        <select name="form_5__memorable_date_day"
+                                                data-msg-required="Please select the memorable day"
+                                                data-rule-required="true" id="" class="form-control selectpicker">
+                                            <option value="">Day</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrap__item">
+                                        <select name="form_5__memorable_date_month"
+                                                data-msg-required="Please select the memorable month"
+                                                data-rule-required="true" id="" class="form-control selectpicker">
+                                            <option value="">Month</option>
+                                            <option value="January">January</option>
+                                            <option value="February">February</option>
+                                            <option value="March">March</option>
+                                            <option value="April">April</option>
+                                            <option value="May">May</option>
+                                            <option value="June">June</option>
+                                            <option value="July">July</option>
+                                            <option value="August">August</option>
+                                            <option value="September">September</option>
+                                            <option value="October">October</option>
+                                            <option value="November">November</option>
+                                            <option value="December">December</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrap__item">
+                                        <select name="form_5__memorable_date_year"
+                                                data-msg-required="Please select the memorable year"
+                                                data-rule-required="true" id="" class="form-control selectpicker">
+                                            <option value="">Year</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2009">2009</option>
+                                            <option value="2008">2008</option>
+                                            <option value="2007">2007</option>
+                                            <option value="2006">2006</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2000">2000</option>
+                                            <option value="1999">1999</option>
+                                            <option value="1998">1998</option>
+                                            <option value="1997">1997</option>
+                                            <option value="1996">1996</option>
+                                            <option value="1995">1995</option>
+                                            <option value="1994">1994</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1990">1990</option>
+                                            <option value="1989">1989</option>
+                                            <option value="1988">1988</option>
+                                            <option value="1987">1987</option>
+                                            <option value="1986">1986</option>
+                                            <option value="1985">1985</option>
+                                            <option value="1984">1984</option>
+                                            <option value="1983">1983</option>
+                                            <option value="1982">1982</option>
+                                            <option value="1981">1981</option>
+                                            <option value="1980">1980</option>
+                                            <option value="1979">1979</option>
+                                            <option value="1978">1978</option>
+                                            <option value="1977">1977</option>
+                                            <option value="1976">1976</option>
+                                            <option value="1975">1975</option>
+                                            <option value="1974">1974</option>
+                                            <option value="1973">1973</option>
+                                            <option value="1972">1972</option>
+                                            <option value="1971">1971</option>
+                                            <option value="1970">1970</option>
+                                            <option value="1969">1969</option>
+                                            <option value="1968">1968</option>
+                                            <option value="1967">1967</option>
+                                            <option value="1966">1966</option>
+                                            <option value="1965">1965</option>
+                                            <option value="1964">1964</option>
+                                            <option value="1963">1963</option>
+                                            <option value="1962">1962</option>
+                                            <option value="1961">1961</option>
+                                            <option value="1960">1960</option>
+                                            <option value="1959">1959</option>
+                                            <option value="1958">1958</option>
+                                            <option value="1957">1957</option>
+                                            <option value="1956">1956</option>
+                                            <option value="1955">1955</option>
+                                            <option value="1954">1954</option>
+                                            <option value="1953">1953</option>
+                                            <option value="1952">1952</option>
+                                            <option value="1951">1951</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./step5-->
+    <!--step6-->
+    <div class="step step_6 hide">
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    Applicant 2 -  Details
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="">
+                                Title
+                                <sup>*</sup></label>
+                            <select name="form_6__title" id="title" class="form-control selectpicker">
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for=""> First Name  <sup>*</sup></label>
+                            <input name="form_6__first_name"  data-rule-required="true" data-msg-required="Please enter first name"   type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for=""> Middle Name (s)</label>
+                            <input type="text" name="form_6__middle_name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for=""> Surname <sup>*</sup></label>
+                            <input type="text"  data-rule-required="true" data-msg-required="Please enter surname"  name="form_6__surname" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row dates-here">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for=""> Date of Birth <sup>*</sup></label>
+                            <div class="select-wrap select-wrap--full">
+                                <div class="select-wrap__item">
+                                    <select name="form_6__date_day" data-rule-required="true" data-msg-required="Please select the day"  id="" class="form-control selectpicker">
+                                        <option value="">Day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap__item">
+                                    <select data-rule-required="true" data-msg-required="Please select the month"  name="form_6__date_month" id="" class="form-control selectpicker">
+                                        <option value="">Month</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap__item">
+                                    <select data-rule-required="true" data-msg-required="Please select the year"  name="form_6__date_year" id="" class="form-control selectpicker">
+                                        <option value="">Year</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1951">1951</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">
+                                Nationality (please state all that apply)
+                                <sup>*</sup></label>
+                            <input data-role="tagsinput" name="form_6__nationality" type="text" class="form-control"  data-rule-required="true" data-msg-required="Please enter nationality"  >
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">
+                                Email Address
+                                <sup>*</sup></label>
+                            <input type="email" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your mail" data-msg-email="Please enter your mail" name="form_6__email" id="form_6__email"  class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">
+                                Confirm Email
+                                <sup>*</sup></label>
+                            <input  data-rule-required="true" data-rule-equalto="#form_6__email" data-msg-required="Please confirm your email" data-msg-equalto="Emails should match" name="form_6__email_confirm"   type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">Home Telephone No.</label>
+                            <input type="text" name="form_6__home_phone" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">Mobile Telephone No.</label>
+                            <input type="text" name="form_6__mobile_phone" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    Applicant 2 - Your current address
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <dl class="form-area__terms">
+                    <dt><p><strong>Same address as applicant 1 </strong><sup>*</sup></p></dt>
+                    <dd>
+                        <div class="checkbox checkbox-warning">
+                            <input data-rule-required="true" data-msg-required="Please check if address same as applicant 1" type="checkbox" name="form_6__same_address" value="" id="form_6__same_address">
+                            <label for="form_6__same_address">Same address</label>
+                        </div>
+                    </dd>
+                </dl>
+                <br>
+                <br>
+                <p class="normal"><strong>  If applicant 2 has spent less than 3 years at this address, please state previous
+                    address</strong></p>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="">Search for an address</label>
+                            <input type="text" class="form-control" placeholder="" name="form_6__previous_address">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Address <sup>*</sup></label>
+                    <textarea  data-rule-required="true" data-msg-required="Please enter your address"   name="form_6__existent_address" id="" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="row dates-here">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">Date moved to address <sup>*</sup></label>
+                            <div class="select-wrap">
+                                <div class="select-wrap__item">
+                                    <select name="form_6__date_moved_day" id="" class="form-control selectpicker"  data-rule-required="true" data-msg-required="Please enter the day"  >
+                                        <option value="">Day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap__item">
+                                    <select name="form_6__date_moved_month" id="" class="form-control selectpicker"  data-rule-required="true" data-msg-required="Please enter the month"  >
+                                        <option value="">Month</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap__item">
+                                    <select name="form_6__date_moved_year" id="" class="form-control selectpicker"  data-rule-required="true" data-msg-required="Please enter the year"  >
+                                        <option value="">Year</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1951">1951</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    Applicant 2 - Tax information
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <div class="form-group">
+                    <label for="">Can you confirm the UK is your only country of residence for tax? <sup>*</sup></label>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="btn-group big-orange-radio" data-toggle="buttons">
+                                <label class="btn btn-warning btn-50p small">
+                                    <input name="form_6__uk_only_tax" value="yes" type="radio" autocomplete="off">
+                                    <p>Yes</p>
+                                </label>
+                                <label class="btn btn-warning btn-50p small active">
+                                    <input name="form_6__uk_only_tax" value="no" type="radio" autocomplete="off" checked>
+                                    <p>No</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Are you a US citizen? <sup>*</sup></label>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="btn-group big-orange-radio" data-toggle="buttons">
+                                <label class="btn btn-warning btn-50p small">
+                                    <input name="form_6__us_citizen" value="yes" type="radio" autocomplete="off">
+                                    <p>Yes</p>
+                                </label>
+                                <label class="btn btn-warning btn-50p small active">
+                                    <input name="form_6__us_citizen" value="no" type="radio" autocomplete="off" checked>
+                                    <p>No</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./step6-->
+    <!--step7-->
+    <div class="step step_7 hide">
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    Applicant 2 - Security questions
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <p class="normal middle"> We will usually only contact you in writing. Howerer, on ocasion, it might be necesarry to contact you by phone or you may want to phone us. So that we are sure we are talking to you, please complete the security questions below. </p>
+                <p class="normal middle"> We will ask you to provide answers to three of your five questions before discussing your account over the telephone.</p>
+                <p class="text-uppercase"><strong>Your memorable details: Applicant 2</strong> </p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">Mother's maiden name <sup>*</sup></label>
+                            <input type="text" name="form_7__memorable_mothers_maiden_name"  data-rule-required="true" data-msg-required="Please enter mother's maiden name  "   class="form-control" placeholder="" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Place of birth <sup>*</sup></label>
+                            <input type="text" name="form_7__memorable_place_of_birth"  data-rule-required="true" data-msg-required="Please enter place of birth "   class="form-control" placeholder="" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">First school <sup>*</sup></label>
+                            <input type="text"  data-rule-required="true" data-msg-required="Please enter first school" name="form_7__memorable_first_school"  class="form-control" placeholder="" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Memorable place  <sup>*</sup></label>
+                            <input type="text" class="form-control" name="form_7__memorable_place"  data-rule-required="true" data-msg-required="Please enter memorable place  "   placeholder="" >
+                        </div>
+                        <div class="dates-here">
+                            <div class="form-group">
+                                <label for="">Memorable date <sup>*</sup></label>
+                                <div class="select-wrap">
+                                    <div class="select-wrap__item">
+                                        <select name="form_7__memorable_date_day" id=""
+                                                class="form-control selectpicker" data-rule-required="true"
+                                                data-msg-required="Please enter day">
+                                            <option value="">Day</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrap__item">
+                                        <select name="form_7__memorable_date_month" id=""
+                                                class="form-control selectpicker" data-rule-required="true"
+                                                data-msg-required="Please enter month">
+                                            <option value="">Month</option>
+                                            <option value="January">January</option>
+                                            <option value="February">February</option>
+                                            <option value="March">March</option>
+                                            <option value="April">April</option>
+                                            <option value="May">May</option>
+                                            <option value="June">June</option>
+                                            <option value="July">July</option>
+                                            <option value="August">August</option>
+                                            <option value="September">September</option>
+                                            <option value="October">October</option>
+                                            <option value="November">November</option>
+                                            <option value="December">December</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrap__item">
+                                        <select name="form_7__memorable_date_year" id=""
+                                                class="form-control selectpicker" data-rule-required="true"
+                                                data-msg-required="Please enter year">
+                                            <option value="">Year</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2009">2009</option>
+                                            <option value="2008">2008</option>
+                                            <option value="2007">2007</option>
+                                            <option value="2006">2006</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2000">2000</option>
+                                            <option value="1999">1999</option>
+                                            <option value="1998">1998</option>
+                                            <option value="1997">1997</option>
+                                            <option value="1996">1996</option>
+                                            <option value="1995">1995</option>
+                                            <option value="1994">1994</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1990">1990</option>
+                                            <option value="1989">1989</option>
+                                            <option value="1988">1988</option>
+                                            <option value="1987">1987</option>
+                                            <option value="1986">1986</option>
+                                            <option value="1985">1985</option>
+                                            <option value="1984">1984</option>
+                                            <option value="1983">1983</option>
+                                            <option value="1982">1982</option>
+                                            <option value="1981">1981</option>
+                                            <option value="1980">1980</option>
+                                            <option value="1979">1979</option>
+                                            <option value="1978">1978</option>
+                                            <option value="1977">1977</option>
+                                            <option value="1976">1976</option>
+                                            <option value="1975">1975</option>
+                                            <option value="1974">1974</option>
+                                            <option value="1973">1973</option>
+                                            <option value="1972">1972</option>
+                                            <option value="1971">1971</option>
+                                            <option value="1970">1970</option>
+                                            <option value="1969">1969</option>
+                                            <option value="1968">1968</option>
+                                            <option value="1967">1967</option>
+                                            <option value="1966">1966</option>
+                                            <option value="1965">1965</option>
+                                            <option value="1964">1964</option>
+                                            <option value="1963">1963</option>
+                                            <option value="1962">1962</option>
+                                            <option value="1961">1961</option>
+                                            <option value="1960">1960</option>
+                                            <option value="1959">1959</option>
+                                            <option value="1958">1958</option>
+                                            <option value="1957">1957</option>
+                                            <option value="1956">1956</option>
+                                            <option value="1955">1955</option>
+                                            <option value="1954">1954</option>
+                                            <option value="1953">1953</option>
+                                            <option value="1952">1952</option>
+                                            <option value="1951">1951</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./step7-->
+    <!--step8-->
+    <div class="step step_8 hide">
+        <div class="gray-header">
+            <div class="container">
+                <p>
+                    <span class="icon first icon-orange-arrow"></span>
+                    Nominated account
+                </p>
+            </div>
+        </div>
+        <div class="form-area">
+            <div class="container">
+                <p class="normal">You need to nominate a bank account to which we will repay your money when your bond matures. The account must be a current acount with a UK bank and be in your name(s). If you are applying with another person, the nominated account can be in both of either of your names.</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">Sort code <sup>*</sup></label>
+                            <input name="form_8__sort_code"  data-rule-required="true" data-msg-required="Please enter sort code"   type="text" class="form-control" placeholder="" >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Account number <sup>*</sup></label>
+                            <input type="text" class="form-control" placeholder=""  data-rule-required="true" data-msg-required="Please enter an account number" name="form_8__account_number"   >
+                        </div>
+                        <div class="form-group">
+                            <label for="">Account name <sup>*</sup></label>
+                            <input type="text" class="form-control" placeholder=""  data-rule-required="true" data-msg-required="Please enter an account name" name="form_8__account_name"   >
+                        </div>
+                    </div>
+                </div>
+                <p class="normal short">You can deposit any amount between &pound; 5,000 and &pound;500,000 in each Sensible Savings bond you ask us to open for you.
+                    <br> IMPORTANT: Please <strong>do not use th &pound; sign</strong> in the field below</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="">Amount to deposit in this bond <sup>*</sup></label>
+                            <input name="form_8__amount_to_deposit_in_bond"  data-rule-required="true" data-msg-required="Please enter amount to deposit"   type="text" class="form-control" placeholder="" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./step8-->
 </div>
 
 
-<div class="form-area">
+<div class="action-buttons">
     <div class="container">
-
-
-        <div class="btn-group big-orange-radio" data-toggle="buttons">
-            <label class="btn btn-warning btn-30p">
-                <input name="fixed_terms_savings" type="radio" autocomplete="off">
-                <h4>1%</h4>
-                <p>Gross/AER <br>
-                    1-Year Fixed Bond</p>
-            </label>
-            <label class="btn btn-warning btn-30p active">
-                <input name="fixed_terms_savings" type="radio" autocomplete="off" checked>
-                <h4>1.25%</h4>
-                <p>Gross/AER <br>
-                    2-Year Fixed Bond</p>
-            </label>
-            <label class="btn btn-warning btn-30p">
-                <input name="fixed_terms_savings" type="radio" autocomplete="off">
-                <h4>1.5%</h4>
-                <p>Gross/AER <br>
-                    3-Year Fixed Bond</p>
-            </label>
-        </div>
-
         <div class="pagination-holder d1">
             <nav aria-label="...">
                 <ul class="pager">
-                    <!--<li class="previous"><a href="#">Previous</a></li>-->
-                    <li class="next"><a href="#" class="">Next</a></li>
+                    <li class="previous"><a href="#" data-step="step_1" class="hide">Previous</a></li>
+                    <li class="next"><a href="#" data-step="step_2" class="">Next</a></li>
                 </ul>
             </nav>
         </div>
-
     </div>
 </div>
 
+</form>
 
 <footer class="bottom">
     <div class="container">
@@ -88,10 +1446,16 @@
 </footer>
 
 
-<script src="assets/vendor/jquery/dist/jquery.js"></script>
-<script src="assets/vendor/bootstrap/dist/js/bootstrap.js"></script>
-<script src="assets/js/app.js"></script>
 
+
+<script src="assets/vendor/jquery/dist/jquery.js"></script>
+<script src="assets/vendor/jquery-validation/dist/jquery.validate.js"></script>
+<script src="assets/vendor/jquery-validation/dist/additional-methods.js"></script>
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script src="assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+<script src="assets/vendor/js-cookie/src/js.cookie.js"></script>
+<script src="assets/js/app.js"></script>
 
 
 </body>

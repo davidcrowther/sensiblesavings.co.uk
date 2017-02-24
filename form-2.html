@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="assets/css/app.css">
 
 </head>
@@ -42,26 +46,31 @@
 <div class="form-area">
     <div class="container">
 
+        <form action="form-3.html" method="get" data-toggle="validator" role="form">
+            <input type="hidden" name="form_step" value="form_2">
 
-        <div class="btn-group big-orange-radio" data-toggle="buttons">
-            <label class="btn btn-warning btn-50p short">
-                <input name="fixed_terms_savings" type="radio" autocomplete="off">
-                <p>In your name only</p>
-            </label>
-            <label class="btn btn-warning btn-50p short active">
-                <input name="fixed_terms_savings" type="radio" autocomplete="off">
-                <p>In joint names</p>
-            </label>
-        </div>
 
-        <div class="pagination-holder d1">
-            <nav aria-label="...">
-                <ul class="pager">
-                    <li class="previous"><a href="#">Previous</a></li>
-                    <li class="next"><a href="#" class="">Next</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div class="btn-group big-orange-radio" data-toggle="buttons">
+                <label class="btn btn-warning btn-50p short">
+                    <input name="account_setup_like" type="radio" value="In your name only" autocomplete="off">
+                    <p>In your name only</p>
+                </label>
+                <label class="btn btn-warning btn-50p short active">
+                    <input name="account_setup_like" type="radio" value="In joint names" autocomplete="off" checked>
+                    <p>In joint names</p>
+                </label>
+            </div>
+
+            <div class="pagination-holder d1">
+                <nav aria-label="...">
+                    <ul class="pager">
+                        <li class="previous"><a href="form-1.html">Previous</a></li>
+                        <li class="next"><button type="submit" >Next</button></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </form>
 
     </div>
 </div>
@@ -79,7 +88,11 @@
 
 
 <script src="assets/vendor/jquery/dist/jquery.js"></script>
+<script src="assets/vendor/bootstrap-validator/dist/validator.min.js"></script>
 <script src="assets/vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script src="assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+<script src="assets/vendor/js-cookie/src/js.cookie.js"></script>
 <script src="assets/js/app.js"></script>
 
 

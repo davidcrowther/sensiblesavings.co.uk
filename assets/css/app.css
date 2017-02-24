@@ -532,7 +532,7 @@ footer p {
   font-size: 1.1em;
 }
 .checkbox label:before {
-  top: 4px;
+  top: 0px;
   outline: 0;
   content: '';
   width: 17px;
@@ -544,7 +544,7 @@ footer p {
   background: url("../img/checkbox-active.png") no-repeat center #fff !important;
   content: "" !important;
   outline: 0;
-  top: 4px;
+  top: 0px;
   padding: 0;
   width: 17px;
   height: 17px;
@@ -558,7 +558,14 @@ footer p {
 .pagination-holder ul.pager {
   width: 100%;
 }
-.pagination-holder ul.pager li a {
+.pagination-holder ul.pager li.next {
+  float: right;
+}
+.pagination-holder ul.pager li.prev {
+  float: left;
+}
+.pagination-holder ul.pager li a,
+.pagination-holder ul.pager li button {
   width: 161px;
   display: block;
   box-shadow: none;
@@ -575,7 +582,8 @@ footer p {
   padding-bottom: 50px;
 }
 .form-area .form-group {
-  margin-bottom: 22px;
+  margin: 0;
+  padding-bottom: 22px;
 }
 .form-area .form-group.has-error label {
   color: #fc4551;
@@ -594,6 +602,20 @@ footer p {
 .form-area .form-group label.error {
   font-weight: 300;
   font-size: 1em;
+  margin: 0;
+}
+.form-area .form-group .checkbox label {
+  font-size: 1.1em;
+  font-weight: 400;
+  padding: 0px 0px 0px 6px;
+}
+.form-area label.error {
+  position: relative;
+  font-weight: 300;
+  display: block;
+  margin: -20px 0px 0px 0px;
+  font-size: 0.96em;
+  line-height: 100%;
 }
 .form-area .form-control {
   border-color: #7d8a99;
@@ -633,7 +655,7 @@ footer p {
 }
 .form-area__terms dd {
   line-height: 189%;
-  margin: 0px 0px 28px 0px;
+  margin: 0px 0px 18px 0px;
 }
 .form-area__terms dd:last-child {
   margin-bottom: 0;
@@ -683,6 +705,59 @@ footer p {
   border-radius: 3px;
   width: 100%;
   display: block;
+}
+.dates-here label.error {
+  margin: 0;
+  line-height: 120%;
+}
+.dates-here label.error:last-child {
+  padding-bottom: 5px;
+}
+.box-number {
+  padding: 36px 5px;
+  font-weight: 700;
+  font-size: 2.8em;
+  vertical-align: middle;
+  border: 1px solid #ff6e00;
+  margin-bottom: 41px;
+  max-width: 293px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.items-bordered-list {
+  list-style-type: none;
+  margin: 0px 0px 23px 0px;
+  padding: 0;
+}
+.items-bordered-list li {
+  margin: 0;
+  padding: 5px 0 6px 0;
+  border-bottom: 1px solid #b1bac4;
+}
+.items-bordered-list li:last-child {
+  border-bottom: none;
+}
+.items-bordered-list li p {
+  font-size: 1.14em;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+.items-bordered-list li p i {
+  font-size: 0.945em;
+}
+.items-bordered-list li p.header {
+  font-size: 1.41em;
+}
+.items-bordered-list li p strong {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+p.sub-middle-thankyou {
+  margin-bottom: 25px;
+  font-size: 1.145em;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=app.css.map */
